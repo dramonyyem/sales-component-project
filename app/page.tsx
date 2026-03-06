@@ -108,13 +108,7 @@ export default function ShopPage() {
         {filteredProducts.length === 0 && (
           <p className="text-center text-gray-500 mt-10">No products found.</p>
         )}
-        <div>
-          {isLoading && <p>Loading users...</p>}
-          {error && <p>Failed to load users</p>}
-          {data?.map((name) => (
-            <div key={name}>{name}</div>
-          ))}
-        </div>
+        
       </div>
     </div>
   );
